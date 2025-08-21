@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Azure Smart Scale Design System - Professional Azure-inspired theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 30% 98%;
+    --foreground: 213 27% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 27% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 27% 15%;
+
+    --primary: 213 84% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 213 70% 55%;
+
+    --secondary: 210 25% 95%;
+    --secondary-foreground: 213 27% 20%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 213 15% 50%;
+
+    --accent: 213 60% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 140 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 95% 55%;
+    --warning-foreground: 213 27% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 20% 88%;
+    --input: 213 20% 94%;
+    --ring: 213 84% 42%;
+
+    /* Azure-inspired gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 25% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(213 70% 60%));
+
+    /* Professional shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(213 27% 15% / 0.1);
+    --shadow-md: 0 4px 12px -2px hsl(213 27% 15% / 0.15);
+    --shadow-lg: 0 8px 24px -4px hsl(213 27% 15% / 0.2);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 30% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 213 25% 12%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 213 25% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 213 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 213 84% 42%;
+
+    --secondary: 213 20% 20%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted: 213 15% 18%;
+    --muted-foreground: 213 15% 65%;
+
+    --accent: 213 60% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 140 60% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 90% 60%;
+    --warning-foreground: 213 30% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 15% 25%;
+    --input: 213 15% 22%;
+    --ring: 213 70% 55%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-surface: linear-gradient(180deg, hsl(213 25% 12%), hsl(213 30% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(213 84% 42%));
+
+    /* Dark mode shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 24px -4px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
