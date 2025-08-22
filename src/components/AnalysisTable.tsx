@@ -81,7 +81,7 @@ export const AnalysisTable = ({ results }: AnalysisTableProps) => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-surface shadow-md">
+        {/* <Card className="bg-gradient-surface shadow-md">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Optimization</CardTitle>
             <TrendingUp className="h-4 w-4 text-success" />
@@ -90,7 +90,7 @@ export const AnalysisTable = ({ results }: AnalysisTableProps) => {
             <div className="text-2xl font-bold text-success">15-30%</div>
             <p className="text-xs text-muted-foreground">Cost reduction</p>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
 
       {/* Results Table */}
