@@ -52,7 +52,7 @@ export const analyzeAzureResources = async (
         },
         { role: "user", content: getAzureRequirementsPrompt(jsonData) },
       ],
-      max_tokens: 500,
+      max_tokens: 2000,
       response_format: { type: "json_object" }, // 👈 strict JSON
     });
 

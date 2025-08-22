@@ -1,0 +1,27 @@
+[
+  {
+    "Azure Resource Name": "Azure App Service",
+    "Parameters": {
+      "App Type": "Web API",
+      "Traffic Volume": "Medium",
+      "Scaling Needs": "Auto-scaling",
+      "Authentication Required": true,
+      "Deployment Slots": 2,
+      "Custom Domain": true,
+      "VNet Integration": true
+    }
+  },
+  {
+    "Azure Resource Name": "Azure SQL Database",
+    "Parameters": {
+      "Deployment Type": "Single Database",
+      "Workload Type": "Transactional OLTP",
+      "Max Size (GB)": 250,
+      "High Availability": true,
+      "Geo-Replication": true,
+      "Backup Retention (Days)": 35,
+      "Compute Tier": "Provisioned",
+      "Expected Connections": 500
+    }
+  }
+]
