@@ -131,7 +131,7 @@ const Index = () => {
             <h2 className="text-2xl font-bold text-center text-foreground mb-8">
               Why Choose Azure Smart Scale?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <Card className="text-center shadow-md bg-gradient-surface">
                 <CardContent className="pt-6">
                   <div className="p-3 rounded-full bg-primary/10 w-fit mx-auto mb-4">
@@ -147,20 +147,6 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="text-center shadow-md bg-gradient-surface">
-                <CardContent className="pt-6">
-                  <div className="p-3 rounded-full bg-success/10 w-fit mx-auto mb-4">
-                    <TrendingUp className="h-6 w-6 text-success" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    Cost Optimization
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Identify potential savings of 15-30% through intelligent
-                    tier recommendations.
-                  </p>
-                </CardContent>
-              </Card>
 
               <Card className="text-center shadow-md bg-gradient-surface">
                 <CardContent className="pt-6">
