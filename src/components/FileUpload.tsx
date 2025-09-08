@@ -95,7 +95,7 @@ export const FileUpload = ({ onFileUpload }: FileUploadProps) => {
           
           {uploadStatus === 'idle' && (
             <div className="text-sm text-muted-foreground">
-              Supported formats: .json, .txt
+              Supported formats: .json
             </div>
           )}
         </div>
